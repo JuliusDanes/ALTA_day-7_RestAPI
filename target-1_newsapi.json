@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "458a360d-6ab3-43f1-b32f-6d381de533c1",
+		"name": "target-1_newsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23981261"
+	},
+	"item": [
+		{
+			"name": "Top News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}everything?q=keyword&{{authKey}}",
+					"host": [
+						"{{baseUrl}}everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "keyword"
+						},
+						{
+							"key": "{{authKey}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top Highlight",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}top-headlines/sources?{{authKey}}",
+					"host": [
+						"{{baseUrl}}top-headlines"
+					],
+					"path": [
+						"sources"
+					],
+					"query": [
+						{
+							"key": "{{authKey}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Indonesia News Update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}top-headlines/sources?country=id&{{authKey}}",
+					"host": [
+						"{{baseUrl}}top-headlines"
+					],
+					"path": [
+						"sources"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "id"
+						},
+						{
+							"key": "{{authKey}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Indonesia Breaking News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}top-headlines?country=id&{{authKey}}",
+					"host": [
+						"{{baseUrl}}top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "id"
+						},
+						{
+							"key": "{{authKey}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Indonesia Market Focus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}top-headlines?category=business&country=id&{{authKey}}",
+					"host": [
+						"{{baseUrl}}top-headlines"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "business"
+						},
+						{
+							"key": "country",
+							"value": "id"
+						},
+						{
+							"key": "{{authKey}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://newsapi.org/v2/"
+		},
+		{
+			"key": "authKey",
+			"value": "apiKey=1d8f21fbbf1848dabd51eccaca4ef16a"
+		}
+	]
+}

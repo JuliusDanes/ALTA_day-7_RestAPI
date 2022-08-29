@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "db42935c-df09-4c23-8f61-9a2351f25a15",
+		"name": "target-2_swapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23981261"
+	},
+	"item": [
+		{
+			"name": "data_Films",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}films",
+					"host": [
+						"{{baseUrl}}films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "data_Films",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}planets",
+					"host": [
+						"{{baseUrl}}planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "data_people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}people",
+					"host": [
+						"{{baseUrl}}people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "data_Species",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}species",
+					"host": [
+						"{{baseUrl}}species"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "data_Starships",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}starships",
+					"host": [
+						"{{baseUrl}}starships"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://swapi.dev/api/"
+		}
+	]
+}
